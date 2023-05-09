@@ -18,8 +18,12 @@ const CreateCoffee = () => {
         })
         .then( res => res.json())
         .then(data => {
-            console.log(data)
-        })
+            
+            if(data.insertedId){
+                alert('added your items')
+            }
+        });
+        form.reset();
     }
     return (
         <form onSubmit={handleAddCoffee} className="card w-[550px] mx-auto">

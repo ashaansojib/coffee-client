@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.coffee-cart{
+    @apply w-[1000px] mx-auto grid grid-cols-4 gap-4
+}
